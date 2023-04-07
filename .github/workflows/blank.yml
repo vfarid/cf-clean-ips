@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  schedule:
+    - cron: '5 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Resolve domains, collect and store IP addresses
+        run: |
+          sh test.sh > ip-list.txt
+          git config --global user.email "vahidfarid@gmail.com"
+          git config --global user.name "Vahid Farid"
+          git add -A
+          git commit -m "Automatic update"
+          git push

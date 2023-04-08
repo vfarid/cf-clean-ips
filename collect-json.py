@@ -7,4 +7,4 @@ result = {
   "ipv6": {}
 }
 
-print(json.dumps(result))
+print(json.dumps(result, indent=4))

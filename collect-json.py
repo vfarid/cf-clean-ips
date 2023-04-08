@@ -6,4 +6,4 @@ result = {
   "ipv6": {}
 }
 
-print result
+print(result)

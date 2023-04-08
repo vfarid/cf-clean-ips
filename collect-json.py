@@ -22,6 +22,6 @@ operator = "TEST"
 ipv4_result = dns.resolver.resolve(provider, "A")
 
 for ipv4 in ipv4_result:
-    result.ipv4.append(IPInfo(ipv4.to_text(), operator, provider, int(time.time())))
+    result["ipv4"].append(IPInfo(ipv4.to_text(), operator, provider, int(time.time())))
 
 print(json.dumps(result, indent=4))

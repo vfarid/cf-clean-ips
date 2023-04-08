@@ -4,8 +4,8 @@
 
 با تشکر از تامین کنندگان آی‌پی:
 
-- [IRCF | آی‌پی تمیز کلودفلر](twitter.com/ircfspace)
-- [Amir Jalilian](twitter.com/amirjaliliann)
+- [IRCF | آی‌پی تمیز کلودفلر](https://twitter.com/ircfspace)
+- [Amir Jalilian](https://twitter.com/amirjaliliann)
 
 
 

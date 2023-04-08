@@ -1,3 +1,3 @@
 import time
 
-print(time.strftime("%Y-%m-%d %H:%M"))
+print("Last Update: " + time.strftime("%Y-%m-%d %H:%M"))

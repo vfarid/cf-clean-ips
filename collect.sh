@@ -1,4 +1,6 @@
 #! /bin/bash
 
-echo "TEST:"
+date
+
+echo "\nTEST:"
 dig cloudflare.com +short

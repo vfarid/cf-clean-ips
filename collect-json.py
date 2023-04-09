@@ -3,38 +3,13 @@ import json
 import dns
 import dns.resolver
 
-
 result = {
   "last_update": time.strftime("%Y-%m-%d %H:%M"),
   "ipv4": [],
   "ipv6": []
 }
 
-providers = {
-    "mci.ircf.space": "MCI",
-    "mcix.ircf.space": "MCI",
-    "mtn.ircf.space": "MTN",
-    "mtnx.ircf.space": "MTN",
-    "mkh.ircf.space": "MKH",
-    "rtl.ircf.space": "RTL",
-    "hwb.ircf.space": "HWB",
-    "ast.ircf.space": "AST",
-    "sht.ircf.space": "SHT",
-    "prs.ircf.space": "PRS",
-    "mbt.ircf.space": "MBT",
-    "ask.ircf.space": "ASK",
-    "rsp.ircf.space": "RSP",
-    "afn.ircf.space": "AFN",
-    "ztl.ircf.space": "ZTL",
-    "psm.ircf.space": "PSM",
-    "arx.ircf.space": "ARX",
-    "smt.ircf.space": "SMT",
-    "fnv.ircf.space": "FNV",
-    "dbn.ircf.space": "DBN",
-    "apt.ircf.space": "APT",
-    "mci.amiajoketoyou.lol": "MCI",
-    "mtn.amiajoketoyou.lol": "MTN",
-}
+providers = json.load(open('providers.json'))
 
 for provider in providers:
     # IPv4
@@ -44,7 +19,7 @@ for provider in providers:
             result["ipv4"].append({
                 "ip": ipv4.to_text(),
                 "operator": providers[provider],
-                "provider": provider,
+                "provider": '.'.join(provider.split('.')[1:]),
                 "created_at": int(time.time())
             })
     except:
@@ -58,7 +33,7 @@ for provider in providers:
             result["ipv6"].append({
                 "ip": ipv6.to_text(),
                 "operator": providers[provider],
-                "provider": provider,
+                "provider": '.'.join(provider.split('.')[1:]),
                 "created_at": int(time.time())
             })
     except:

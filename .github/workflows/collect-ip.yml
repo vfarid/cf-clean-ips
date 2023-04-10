@@ -16,6 +16,7 @@ jobs:
           python -m pip install dnspython
           python collect-json.py > list.json
           python collect-text.py > list.txt
+          python collect-json.py > test.json
           git config --global user.email "vahidfarid@gmail.com"
           git config --global user.name "Vahid Farid"
           git add -A

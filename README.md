@@ -17,7 +17,7 @@
 - [cjmahdi.online](cjmahdi.online)
 - [r-acc3ss.cloud](r-acc3ss.cloud)
 - [hamedgeek.top](hamedgeek.top)
-
+- [jangal.icu](jangal.icu)
 
 
 ### این پروژه نیاز به همکاری شما دارد 

@@ -3,8 +3,8 @@ name: "Collect IPs"
 on:
   push:
     branches: [ "main" ]
-  schedule:
-    - cron: '0 0 * * 6'
+  #schedule:
+  #  - cron: '0 0 * * 6'
 
 jobs:
   build:
